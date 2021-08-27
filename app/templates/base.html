@@ -1,0 +1,20 @@
+{% extends 'bootstrap/base.html'%}
+
+
+{% block styles %}
+{{super()}}
+{{ fontawesome_css() }}
+
+  <!--Importing the simple mde css and js files  -->
+{{ simplemde.css}}
+{{ simplemde.js }}
+<link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+
+
+<!-- Navbar block  -->
+
+{% block navbar %}
+    {% include 'navbar.html'%}
+{% endblock %}

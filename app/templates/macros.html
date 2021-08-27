@@ -1,0 +1,21 @@
+<!-- Displaying blogs macro -->
+{% macro displayBlogs(blogs_list) %}
+
+    {% for blog in blogs_list %}
+
+    <div class="card">
+      <h4>Author:</h4>
+      <h4> {{blog.user.username}}</h4>
+      <div class="card-info">
+        <h2 style="margin-right: 100px;"> <a href="{{url_for('main.single_post',id=blog.id)}}">{{blog.blog_title}}</a> </h2>
+        Posted on {{blog.posted.strftime("%m/%d/%Y, %H:%M:%S")}}   
+      </div>
+
+       <p>
+       
+      </p>
+    </div>
+
+
+    {% endfor %}
+{% endmacro %}

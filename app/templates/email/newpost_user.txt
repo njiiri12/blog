@@ -1,0 +1,3 @@
+Hello {{user.username}}
+
+A new blog has been posted 

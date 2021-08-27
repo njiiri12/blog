@@ -1,0 +1,81 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+{% import 'macros.html' as macro%}
+
+
+
+
+
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+{% endblock %}
+
+
+{% block content %}
+
+{% with messages = get_flashed_messages()%}
+{%  if messages %}
+    {% for message in messages%}
+       <h3>{{message}}</h3>
+    {%endfor%}   
+{%endif%}
+{% endwith %}    
+<main>
+  <section class="glass">
+   <div class="dashboard">
+     <div class="user">
+       <img src="" alt="">
+       <h3> Random quote </h3>
+       <hr>
+       <i class="fa fa-quote-left" aria-hidden="true"></i>
+       
+       <p style="font-size: larger;"> {{quote}}</p>
+        
+       <i class="fa fa-quote-right" aria-hidden="true"></i>
+
+       <hr>
+       <footer class="blockquote-footer">Author {{author}}
+        <hr>
+       </footer>
+
+     </div>
+     
+   </div>
+
+   <div class="games">
+     <div class="status">
+
+
+     
+
+
+
+       <h1>Available BLogs</h1>
+       
+
+     </div>
+     <div class="cards">
+
+
+       {% if blogs %}
+       {{macro.displayBlogs(blogs)}}   
+
+      {% endif %}
+
+
+     </div>
+   </div>
+  </section>
+</main> 
+<div class="circle1">
+  
+</div>
+<div class="circle1"></div>
+
+
+
+
+
+      {% endblock %}      

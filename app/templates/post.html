@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block content%}
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-md-4">
+
+    {% with messages = get_flashed_messages()%}
+    {%  if messages %}
+        {% for message in messages%}
+           <h3>{{message}}</h3>
+        {%endfor%}   
+    {%endif%}
+{% endwith %} 
+             </div>
+    <div class="col-md-4 img-fluid" style="font-family: 'Poppins', sans-serif ;" >
+      <h3>{{post.blog_title}}</h3>
+      <hr>
+      
+    {{format_post|safe}}   
+  <br>
+   <p><a href="{{url_for('main.comments',blog_id = post.id)}}" class="btn btn-info btn-lg"><i class="fa fa-comments-o" aria-hidden="true"></i> Comments</a>  &nbsp;  
+    
+    <a href="{{url_for('main.delete_blog',blog_id = post.id,user_id = post.user.id)}}" class="btn btn-danger btn-lg"><i class="fa fa-comments-o" aria-hidden="true"></i> Delete this blog</a>
+
+
+    &nbsp;  
+    
+    <a href="{{url_for('main.update_blog',blog_id = post.id,user_id = post.user.id)}}" class="btn btn-success btn-lg"><i class="fa fa-comments-o" aria-hidden="true"></i> update this blog</a>
+    </p>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  
+
+
+</div>
+{%endblock%}
