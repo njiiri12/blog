@@ -51,7 +51,7 @@ Additionally, There is a feature that displays random quotes to inspire your use
 
 ## Support and contact details
 
-| Eston | ekagwima745@gmail.com |
+| Njiiri | njerinjiiri@gmail.com|
 | ----- | --------------------- |
 
 
