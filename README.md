@@ -25,7 +25,7 @@ Additionally, There is a feature that displays random quotes to inspire your use
 
 
 ## Setup/Installation Requirements
-- install Python3
+- install Python3.9
 - Clone this repository `git clone https://github.com/kagus-code/Kagus-BlogSpot.git`
 - Change directory to the project directory using  the `cd` command
 - Open project on VSCode
