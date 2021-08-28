@@ -56,7 +56,7 @@ Additionally, There is a feature that displays random quotes to inspire your use
 
 
 ### Known bugs 
-- No known bugs but if any found contact me with details below
+- No known bugs but if any found contact me with details 
 
 ### License
 
