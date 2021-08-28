@@ -1,9 +1,9 @@
 
-# Kagus-BlogPost Web App
+# Njiiri bloggy- Web App
 
 #### This application will allow you to create and share your opinions and other users can read and comment on them. , 30/04/2021
 
-#### By **Eston Kagwima**
+#### By **yvonne Njiiri**
 
 ## Description
 This web app will allow you to create and share your opinions and other users can read and comment on them.
@@ -47,7 +47,6 @@ Additionally, There is a feature that displays random quotes to inspire your use
 
 
 ## link to live site on  HEROKU
-https://kagusblog.herokuapp.com/
 
 
 ## Support and contact details
@@ -63,4 +62,4 @@ https://kagusblog.herokuapp.com/
 
 License
 [MIT License](https://choosealicense.com/licenses/mit/)
-Copyright (c) 2021 Eston Kagwima
+Copyright (c) 2021 Yvonne Njiiri
